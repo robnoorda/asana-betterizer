@@ -1,0 +1,445 @@
+body{
+    width: 370px;
+    font-family: Montserrat, 'Helvetica Neue', Arial, sans-serif;
+    padding: 5px;
+}
+
+.container{
+    padding: 5px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.navbar{
+    min-height: initial;
+    margin-bottom: 0;
+}
+
+.nav {
+    margin: 0;
+}
+
+.nav>li>a{
+    padding: 3px;
+}
+
+.nav>li {
+    float: left;
+}
+
+.superscript {
+    font-size: 0.5em;
+    vertical-align: super;
+    color: #f00;
+}
+
+/* profile image */
+img.profile-img{
+    height: auto;
+    width: auto;
+}
+img.profile-img-md {
+    max-width: 36px;
+    max-height: 36px;
+}
+img.profile-img-sm {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+img.profile-img-xs {
+    max-height: 14px;
+    max-width: 14px;
+}
+
+/* fonts */
+.font-size-12{
+    font-size: 12px;
+}
+
+.font-size-10{
+    font-size: 10px;
+}
+
+.font-size-30{
+    font-size: 30px;
+}
+
+/* padding control */
+.padding-right-xs{
+    padding-right: 5px !important;
+}
+
+.padding-left-xs{
+    padding-left: 5px !important;
+}
+
+.padding-bottom-xs{
+    padding-bottom: 5px !important;
+}
+
+.padding-top-xs{
+    padding-bottom: 5px !important;
+}
+
+.padding-all-xs{
+    padding: 5px !important;
+}
+
+.padding-left-zero {
+    padding-left: 0;
+}
+
+.padding-right-zero {
+    padding-right: 0;
+}
+
+.line-height-one{
+    line-height: 1;
+}
+
+body section{
+    width: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+hr{
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* asana buttons */
+.btn-asana{
+    color: #fff !important;
+    background-color: #1AAFD0 !important;
+    border: 1px solid #1AAFD0 !important;
+}
+
+.asana-link{
+    color: #fff !important;
+    margin-right: 5px;
+    background-color: #1AAFD0 !important;
+}
+
+.btn-asana:hover{
+    background-color: #02CEFF;
+    box-shadow: 0 0 0 3px #80E6FF;
+}
+
+span.archived-project{
+    border-left: 3px solid #62d26f;
+    padding-left: 5px;
+}
+
+.private-project{
+    color: #d2635b;
+}
+
+.overdue{
+    color: #ed4758;
+}
+
+.upcoming{
+    color: #95e0ff;
+}
+
+.overflow-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* custom select */
+.select2 > .select2-choice.ui-select-match {
+    /* Because of the inclusion of Bootstrap */
+    height: 29px;
+}
+
+.selectize-control > .selectize-dropdown {
+    top: 36px;
+}
+
+.btn.ui-select-toggle {
+    padding: 6px 6px;
+}
+
+.ui-select-match .ui-select-toggle a{
+    color: #333;
+}
+
+/* Some additional styling to demonstrate that append-to-body helps achieve the proper z-index layering. */
+.select-box {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.alert-info.positioned {
+    margin-top: 1em;
+    position: relative;
+    z-index: 10000; /* The select2 dropdown has a z-index of 9999 */
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group input.ui-select-search{
+    width: 100% !important;
+}
+
+.form-group.multi-select input.ui-select-search{
+    width: auto !important;
+}
+
+.form-group-box{
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.form-group textarea{
+    outline: none;
+    padding: 2px;
+    resize:none;
+    width: 100%;
+    border:0;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+.requiredField{
+    border: 1px solid red !important;
+}
+
+.copy-page{
+    position: absolute;
+    right: 16px;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+.copy-page:hover, .copy-page:focus{
+    color: #02CEFF;
+}
+
+/*
+Calendar popup above rather than below
+*/
+.dropdown-menu.datetime-picker-dropdown.ng-valid-date-disabled {
+    top: calc(-50% - 223px) !important;
+}
+
+.dropdown-menu.datetime-picker-dropdown.ng-not-empty.ng-valid-time,
+.dropdown-menu.datetime-picker-dropdown.ng-empty{
+    top: calc(-15% - 127px);
+}
+
+.dropdown-menu.datetime-picker-dropdown a.btn {
+    padding: 0;
+    font-size: 10px;
+}
+
+.dropdown-menu.datetime-picker-dropdown .btn-group-sm>.btn, .btn-sm {
+    padding: 2px 4px;
+}
+
+/*
+bug in angular-ui-select
+fix taken from here
+https://github.com/angular-ui/ui-select/issues/379
+*/
+.ui-select-multiple.ui-select-bootstrap {
+    min-height: 31px;
+}
+
+.ui-select-multiple .ui-select-search.ng-hide{
+    width: 100%; display: inline-block !important; cursor: not-allowed;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match .close{
+    line-height: 1;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match {
+    padding-left: 0 !important;
+}
+
+.ui-select-bootstrap .ui-select-match-text {
+    position: relative;
+    margin-top: -2px;
+}
+
+.ui-select-bootstrap .ui-select-match-text span {
+    position: relative;
+    vertical-align: middle;
+}
+
+.ui-select-choices .ui-select-choices-row > a{
+    padding: 3px 10px;
+}
+
+.ui-select-bootstrap .ui-select-choices,
+.ui-select-bootstrap .ui-select-no-choice{
+    max-height: 150px;
+}
+
+/*multiselect span - showing default outline*/
+span:focus{
+    outline: none;
+}
+
+.asana-ng-container .btn-default:hover, .asana-ng-container .btn-default:focus{
+    color: #02CEFF;
+    background-color: #fff;
+    border-color: #02CEFF;
+}
+
+.asana-ng-container .btn-default:hover *, .asana-ng-container .btn-default:focus *,
+.asana-ng-container .close:focus, .close:hover {
+    color: #02CEFF;
+}
+
+.asana-ng-container .checkbox-asana{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 22px;
+}
+
+.asana-ng-container .checkbox-asana input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.asana-ng-container .checkbox-asana .task-name {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 23px;
+}
+
+.asana-ng-container .open>.dropdown-toggle.btn-default:hover {
+    color: #02CEFF;
+    background-color: #ffffff;
+    border-color: #02CEFF;
+}
+
+.asana-ng-container .task-criteria.open>.dropdown-toggle.btn-default{
+    background-color: #ffffff;
+    border-color: #02CEFF;
+}
+
+.asana-ng-container .task-criteria .dropdown-menu{
+    font-size: 12px;
+    min-width: 110px;
+}
+
+.asana-ng-container .task-criteria .dropdown-menu>li>a{
+    padding: 3px 5px;
+}
+
+.asana-ng-container .task-manager .list-group-item{
+    padding: 2px 2px;
+}
+
+.asana-ng-container .task-list .task-name {
+    padding-left: 0;
+    max-width: calc(100% - 76px);
+    vertical-align: bottom;
+}
+
+.asana-ng-container .task-list .task-details{
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.asana-ng-container .task-list .task-details:hover{
+    color: #02CEFF;
+}
+
+.asana-ng-container .task-list {
+    height: 256px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.asana-ng-container .task-list .list-group{
+    margin-bottom: 0;
+}
+
+.asana-ng-container .task-details .task-name{
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    width: calc(100% - 36px);
+    vertical-align: middle;
+    padding-left: 5px;
+    resize: none;
+}
+
+.asana-ng-container .task-details .task-liked {
+    cursor: pointer;
+    color: #14aaf5;
+}
+
+.asana-ng-container .task-details .task-liked:hover {
+    color: #178ee0;
+}
+
+.asana-ng-container .task-list .checkbox label,
+.asana-ng-container .task-details .checkbox label{
+    padding-left: 0;
+}
+
+.asana-ng-container .task-details .user-name,
+.asana-ng-container .task-details .activity-time{
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #777;
+}
+
+.asana-ng-container .task-details .user-name:hover,
+.asana-ng-container .task-details .activity-time:hover,
+.asana-ng-container .task-details .user-name:focus,
+.asana-ng-container .task-details .activity-time:focus{
+    color: #02CEFF;
+}
+
+.asana-ng-container .task-details .list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.asana-ng-container .task-details .activity-list .user-activity{
+    font-size: 10px;
+}
+
+.asana-ng-container .task-details .comment-list .user-comment{
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    font-size:12px;
+    padding: 5px;
+}
+
+.asana-ng-container .task-details .comment-list .activity-time{
+    float: right;
+    line-height: 26px;
+}
+
+.asana-ng-container .task-details .list.activity-list {
+    line-height: 12px;
+}
+
+.asana-ng-container .task-details .comment-list img.profile-img-sm,
+.asana-ng-container .task-manager .task-list img.profile-img-sm {
+    margin: 0 2px;
+}
+
